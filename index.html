@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuxent.com techno marketplace</title>
+  <link rel="stylesheet" href="source/scss_css/style.css" />
+
+ <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const fromAnimation = urlParams.get('from') === 'animation';
+
+  if (!fromAnimation) {
+    // Нет параметра from=animation — редиректим на анимацию
+    window.location.href = "nuxent-animation/nuxent-animation.html";
+  } else {
+    // Есть параметр from=animation — убираем его из URL без перезагрузки
+    const url = new URL(window.location);
+    url.searchParams.delete('from');
+    window.history.replaceState({}, document.title, url.pathname);
+  }
+</script>
+
+
+</head>
+<body>
+  <div class="header">
+    <div class="header__container">
+      <button class="header__burger-menu"></button>`
+      <button class="header__nuxent-logo"></button>
+      <div class="header__search-wrapper">
+        <input class="header__search-field" type="search" placeholder="Search Nuxent">
+        <button class="header__search-button" type="button" aria-label="Search"></button>
+      </div>
+      <button class="header__catalog-button"></button>
+      <button class="header__profile-button"></button>
+      <button class="header__cart-button"></button>
+    </div>
+  </div>
+</body>
+</html>

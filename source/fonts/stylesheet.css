@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Michroma';
+    src: url('Michroma-Regular.woff2') format('woff2'),
+        url('Michroma-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
