@@ -36,12 +36,17 @@
 
 <script>
 window.addEventListener('DOMContentLoaded', () => {
-  // Убираем путь (например, index.html) и параметры из адресной строки, оставляя только домен
-  const url = new URL(window.location);
-  url.pathname = '/nuxent.com/';      // Оставляем только домен с корнем
-  url.search = '';         // Убираем все параметры
-  window.history.replaceState({}, document.title, url);
+  const url = new URL(window.location.href);
+  url.search = ''; // убираем параметры
+
+  const basePath = '/nuxent.com/'; // твой репозиторий с косой чертой в конце
+
+  if (url.pathname !== basePath) {
+    url.pathname = basePath;
+    window.history.replaceState({}, document.title, url.toString());
+  }
 });
+
 </script>
 
 </body>
