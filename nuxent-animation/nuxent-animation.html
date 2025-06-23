@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="../nuxent-animation/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
 
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const fromAnimation = urlParams.get('from') === 'animation';
+
+    // Если не с параметром ?from=animation, то переходим на анимацию
+    if (!fromAnimation && window.location.pathname !== '/nuxent-animation/nuxent-animation.html') {
+    window.location.href = '/nuxent-animation/nuxent-animation.html';
+    }
+  </script>
 </head>
 
 <body>
@@ -23,6 +32,16 @@
     window.location.href = "../index.html?from=animation"; // ← Укажи свой путь
   });
 
+</script>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  // Убираем путь (например, index.html) и параметры из адресной строки, оставляя только домен
+  const url = new URL(window.location);
+  url.pathname = '/';      // Оставляем только домен с корнем
+  url.search = '';         // Убираем все параметры
+  window.history.replaceState({}, document.title, url);
+});
 </script>
 
 </body>

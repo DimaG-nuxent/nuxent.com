@@ -19,6 +19,8 @@
     url.searchParams.delete('from');
     window.history.replaceState({}, document.title, url.pathname);
   }
+    // Убираю з пошукового поля путь до файла (оставляю тільки домен)
+    window.history.replaceState({}, document.title, "/");
 </script>
 
 
