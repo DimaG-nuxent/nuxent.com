@@ -34,20 +34,7 @@
 
 </script>
 
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-  const url = new URL(window.location.href);
-  url.search = ''; // убираем параметры
 
-  const basePath = '/nuxent.com/nuxent-animation'; // твой репозиторий с косой чертой в конце
-
-  if (url.pathname !== basePath) {
-    url.pathname = basePath;
-    window.history.replaceState({}, document.title, url.toString());
-  }
-});
-
-</script>
 
 </body>
 
