@@ -66,6 +66,7 @@ $black: #000000;
     cursor: pointer;
     appearance: none;
     box-shadow: none;
+    display: block;
     transition: background-image 0.3s;
 
     &:hover {
@@ -83,47 +84,49 @@ $black: #000000;
 
   &__search-wrapper{
     position: relative;
-    width: fit-content;
+    max-width: 1059px;
+    min-width: 200px;
+    flex: 1 1 auto;
   }
 
-  &__search-field{
-    margin: 0px 0px 0px 18px;
-    background-color: $white;
-    width: 1059px;
-    height: 40px;
-    font-family: 'Inter';
-    font-size: 16px;
-    border-radius: 250px;
-    padding: 0px 56px 0px 14px;
-    border: none;
-    outline: none;
+  .header__search-field {
+  width: 100%; // Занимает всю ширину обёртки
+  width: calc(100% - 44px);
+  height: 40px;
+  padding: 0 56px 0 14px;
+  margin-left: 18px;
+  background-color: $white;
+  font-family: 'Inter';
+  font-size: 16px;
+  border-radius: 250px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+  .header__search-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  background-image: url('../../img/icons/header/search-button.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  padding: 0;
+  border-top-right-radius: 250px;
+  border-bottom-right-radius: 250px;
+  transition: background-image 0.3s;
+
+  &:hover {
+    background-image: url('../../img/icons/header/search-button-hover.svg');
   }
-
-  &__search-button{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 44px;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-    background-image: url('../../img/icons/header/search-button.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    padding: 0;
-    transition: opacity 0.3s;
-    border-top-right-radius: 250px;
-    border-bottom-right-radius: 250px;
-    transition: background-image 0.3s;
-
-    &:hover{
-        background-image: url('../../img/icons/header/search-button-hover.svg');
-    }
-
-  }
+}
 
     &__catalog-button{
     width: 115px;
