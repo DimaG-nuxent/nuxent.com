@@ -38,7 +38,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   // Убираем путь (например, index.html) и параметры из адресной строки, оставляя только домен
   const url = new URL(window.location);
-  url.pathname = '/';      // Оставляем только домен с корнем
+  url.pathname = '/nuxent.com/';      // Оставляем только домен с корнем
   url.search = '';         // Убираем все параметры
   window.history.replaceState({}, document.title, url);
 });
