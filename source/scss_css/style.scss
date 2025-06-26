@@ -57,7 +57,7 @@ $black: #000000;
   &__nuxent-logo {
     width: 200px;
     height: 40px;
-    background-image: url('../../img/logotypes/nuxent-logo.svg');
+    background-image: url('../../img/logotypes/logo.png');
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
@@ -70,7 +70,7 @@ $black: #000000;
     transition: background-image 0.3s;
 
     &:hover {
-      background-image: url('../../img/logotypes/nuxent-logo-hover.svg');
+      background-image: url('../../img/logotypes/logo-hover.png');
       transform: none;
     }
 
