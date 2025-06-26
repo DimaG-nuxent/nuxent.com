@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__nuxent-logo {
   width: 200px;
-  height: 42px;
+  height: 40.6px;
   background-image: url("../../img/logotypes/logo.png");
   background-repeat: no-repeat;
   background-color: transparent;
@@ -235,4 +235,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__cart-button:hover {
   background-image: url("../../img/icons/header/cart-button-hover.svg");
+}
+
+.discounts {
+  display: flex;
+  justify-content: center;
+  max-width: 1920px;
+  margin: 44px auto 128px auto;
+}
+.discounts__discounts-container {
+  max-width: 1640px;
+  height: 634px;
+}
+.discounts__card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 948px;
+  width: 948px;
+  height: 634px;
+  background-color: #FFFFFF;
+  border-radius: 35px;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.25);
+}
+.discounts__card-content {
+  background-image: url();
+  display: flex;
+  max-width: 948px;
+  height: 643px;
+  width: 948px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+.discounts__arrow-switcher {
+  display: flex;
+}
+.discounts__arrow-switcher_left {
+  width: 11px;
+  height: 20px;
+  background-image: url(../../img/icons/discounts/arrow-switcher.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+.discounts__arrow-switcher_right {
+  width: 11px;
+  height: 20px;
+  background-image: url(../../img/icons/discounts/arrow-switcher.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
 }/*# sourceMappingURL=style.css.map */

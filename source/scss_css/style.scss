@@ -14,6 +14,8 @@ $dark-blue: #14213D;
 $white: #ffffff;
 $black: #000000;
 
+
+//Хедер і всі його стилі
 .header {
   width: 100%;
   height: 72px;
@@ -56,7 +58,7 @@ $black: #000000;
 
   &__nuxent-logo {
     width: 200px;
-    height: 42px;
+    height: 40.6px;
     background-image: url('../../img/logotypes/logo.png');
     background-repeat: no-repeat;
     background-color: transparent;
@@ -189,3 +191,66 @@ $black: #000000;
     }
 
 }
+
+
+//Блок знижок і всі його стилі
+
+//Контейнер для всіх discount карточок
+.discounts{
+  display: flex;
+  justify-content: center;
+  max-width: 1920px;
+  margin: 44px auto 128px auto;
+
+  &__discounts-container{
+    max-width: 1640px;
+    height: 634px;
+  }
+
+  &__card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 948px;
+    width: 948px;
+    height: 634px;
+    background-color: #FFFFFF;
+    border-radius: 35px;
+    box-shadow: 0 4px 32px 0 rgba($color: #000000, $alpha: 0.25);
+  }
+
+  &__card-content{
+    background-image: url();
+    display: flex;
+    max-width: 948px;
+    height: 643px;
+    width: 948px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+  }
+
+  &__arrow-switcher{
+    display: flex;
+  }
+
+  &__arrow-switcher_left{
+    width: 11px;
+    height: 20px;
+    background-image: url(../../img/icons/discounts/arrow-switcher.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+  }
+
+  &__arrow-switcher_right{
+    width: 11px;
+    height: 20px;
+    background-image: url(../../img/icons/discounts/arrow-switcher.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+  }
+
+
+}
+
