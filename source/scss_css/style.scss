@@ -237,19 +237,32 @@ $black: #000000;
   &__arrow-switcher_left{
     width: 11px;
     height: 20px;
-    background-image: url(../../img/icons/discounts/arrow-switcher.svg);
+    background-image: url(../../img/icons/discounts/arrow-switcher-left.svg);
     background-color: transparent;
     background-repeat: no-repeat;
+    transition: background-image 0.3s;
+
+    &:hover{
+      background-image: url(../../img/icons/discounts/arrow-switcher-left-hover.svg);
+    }
+
   }
 
   &__arrow-switcher_right{
     width: 11px;
     height: 20px;
-    background-image: url(../../img/icons/discounts/arrow-switcher.svg);
+    background-image: url(../../img/icons/discounts/arrow-switcher-right.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    transform: scaleX(-1);
+    transition: background-image 0.3s;
+
+    &:hover{
+      background-image: url(../../img/icons/discounts/arrow-switcher-right-hover.svg);
+    }
+
   }
+
+
 
 
 }
