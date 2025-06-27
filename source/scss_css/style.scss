@@ -227,7 +227,7 @@ $black: #000000;
     border-radius: 35px;
   }
 
-  .card-bg {
+  &__card-bg {
   position: absolute;
   inset: 0;
   z-index: -1;
