@@ -250,6 +250,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1640px;
   height: 634px;
   display: flex;
+  margin: 0px 140px;
   justify-content: center;
 }
 .discounts__card-container {
@@ -266,6 +267,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   max-height: 634px;
   border-radius: 35px;
+  margin: 0px 154px;
 }
 .discounts__card-bg {
   position: absolute;
