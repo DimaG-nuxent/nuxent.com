@@ -499,10 +499,11 @@ $black: #000000;
   display: flex;
   position: relative;
   flex-direction: column;
-  max-width: calc(100% - 280px);
+  max-width: calc(100% - 260px);
   max-height: 678px;
   height: 100%;
 
+  
   &__top-text{
     display: flex;
     justify-content: space-between;
@@ -540,35 +541,37 @@ $black: #000000;
     gap: 20px;
     position: absolute;
     bottom: 0;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     max-height: 600px;
-    height: 100%;
+    height: 600px;
     filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25));
   }
 
   &__card_left{
     background-image: url(../../img/icons/popular-products/product-card-bg.png);
-    background-size: contain;
+    background-size: 100% 100%;
     position: relative;
-    width: calc(50% - 10px);
+    width: auto;
     min-width: 0;
     background-repeat: no-repeat;
-    max-width: none;
-    max-height: 600px;
-    height: auto;
+    min-width: 150px;
+    max-width: 810px;
+    flex-grow: 1;
+    border-radius: 35px;
   }
 
   &__card_right{
     background-image: url(../../img/icons/popular-products/product-card-bg.png);
-    background-size: contain;
+    background-size: 100% 100%;
     position: relative;
-    width: calc(50% - 10px);
+    width: auto;
     min-width: 0;
     background-repeat: no-repeat;
-    max-width: none;
-    max-height: 600px;
-    height: auto;
+    min-width: 150px;
+    max-width: 810px;
+    flex-grow: 1;
+    border-radius: 35px;
   }
   
 
