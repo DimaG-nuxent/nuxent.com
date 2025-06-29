@@ -393,10 +393,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .top-brands {
-  margin: 0 140px;
+  margin: 0 auto;
   display: flex;
   position: relative;
-  max-width: 1640px;
+  max-width: calc(100% - 280px);
   width: 100%;
   height: 106px;
 }
@@ -447,6 +447,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.15;
 }
 .top-brands__logotypes-flex-container {
+  margin: 15px 0px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -498,16 +499,14 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 3px;
   width: 100%;
   max-height: 24px;
-  height: 100%;
 }
 
 .popular-products {
-  margin: 128px 140px 0 140px;
+  margin: 128px auto 0 auto;
   display: flex;
   position: relative;
   flex-direction: column;
-  max-width: 1640px;
-  width: 100%;
+  max-width: calc(100% - 280px);
   max-height: 678px;
   height: 100%;
 }
@@ -545,7 +544,6 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 0;
   justify-content: space-between;
-  max-width: 1640px;
   width: 100%;
   max-height: 600px;
   height: 100%;
@@ -553,17 +551,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 .popular-products__card_left {
   background-image: url(../../img/icons/popular-products/product-card-bg.png);
+  background-size: contain;
   position: relative;
-  max-width: 810px;
-  width: 100%;
+  width: calc(50% - 10px);
+  min-width: 0;
+  background-repeat: no-repeat;
+  max-width: none;
   max-height: 600px;
-  height: 100%;
+  height: auto;
 }
 .popular-products__card_right {
   background-image: url(../../img/icons/popular-products/product-card-bg.png);
+  background-size: contain;
   position: relative;
-  max-width: 810px;
-  width: 100%;
+  width: calc(50% - 10px);
+  min-width: 0;
+  background-repeat: no-repeat;
+  max-width: none;
   max-height: 600px;
-  height: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
