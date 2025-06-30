@@ -550,26 +550,77 @@ h1, h2, h3, h4, h5, h6 {
   filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25));
 }
 .popular-products__card_left {
-  background-image: url(../../img/icons/popular-products/product-card-bg.png);
-  background-size: 100% 100%;
   position: relative;
-  width: auto;
-  min-width: 0;
-  background-repeat: no-repeat;
-  min-width: 150px;
+  display: flex;
+  flex-direction: column;
   max-width: 810px;
-  flex-grow: 1;
-  border-radius: 35px;
+  width: 100%;
+  height: 600px;
 }
 .popular-products__card_right {
-  background-image: url(../../img/icons/popular-products/product-card-bg.png);
-  background-size: 100% 100%;
   position: relative;
-  width: auto;
-  min-width: 0;
-  background-repeat: no-repeat;
-  min-width: 150px;
+  display: flex;
+  flex-direction: column;
   max-width: 810px;
-  flex-grow: 1;
-  border-radius: 35px;
+  width: 100%;
+  height: 600px;
+}
+.popular-products__cart-button {
+  background-image: url(../../img/icons/popular-products/cart-button.png);
+  max-width: 292px;
+  width: 100%;
+  height: 52px;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  color: #000000;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0px 0px 0px 30px;
+}
+.popular-products__cart-button:hover {
+  background-image: url(../../img/icons/popular-products/cart-button-hover.png);
+  color: #ffffff;
+}
+.popular-products__top-part {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.popular-products__top-left-part {
+  display: flex;
+  position: relative;
+  flex: 1 1 300px;
+  margin: 0px 300px 0px 0px;
+  min-width: 200px;
+  max-width: 508px;
+  width: 100%;
+  height: 63px;
+  background-color: #ffffff;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 25px;
+}
+.popular-products__top-left-angle {
+  background-image: url(../../img/icons/popular-products/top-left-angle.png);
+  display: flex;
+  position: absolute;
+  width: 25px;
+  height: 62px;
+  right: 277px;
+}
+.popular-products__bottom-part {
+  background-color: #ffffff;
+  display: flex;
+  position: absolute;
+  max-width: 810px;
+  width: 100%;
+  max-height: 538px;
+  height: 100%;
+  bottom: 0;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
 }/*# sourceMappingURL=style.css.map */
