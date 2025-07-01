@@ -743,7 +743,27 @@ $blue: #00BBFF;
     justify-content: center;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
-    transition: background-image 0.3s, box-shadow 0.3s;
+    transition: background-image 0.3s;
+
+    &::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    right: 0;
+    width: 100px; // толщина "тени"
+    background-color: transparent;
+    border: 4px solid $blue;
+    border-radius: 35px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    clip-path: inset(0 0 0 calc(100% - 35px)); // Показываем только правую часть рамки
+    transition-delay: -0.05s;
+    }
+
+    &:hover::before{
+      opacity: 1;
+      transition-delay: 0.05s;
+    }
 
     &:hover{
       .catalog__other-robots-title{
@@ -755,8 +775,6 @@ $blue: #00BBFF;
         background-image: url(../../img/icons/Catalog/other-robots-img-hover.png);
       }
       background-image: url(../../img/icons/Catalog/other-robots-bg-hover.png);
-      box-shadow: inset -2px 0 0 0 $blue;
-      
     }
   }
 
@@ -792,7 +810,25 @@ $blue: #00BBFF;
     background-color: transparent;
     justify-content: center;
     border-radius: 35px;
-    transition: background-image 0.3s, box-shadow 0.3s;
+    transition: background-image 0.3s;
+
+    &::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    right: 0;
+    max-width: 395px;
+    width: 100%; // толщина "тени"
+    background-color: transparent;
+    border: 4px solid $blue;
+    border-radius: 35px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    }
+
+    &:hover::before{
+      opacity: 1;
+    }
 
     &:hover{
       .catalog__home-robots-title{
@@ -803,9 +839,6 @@ $blue: #00BBFF;
         transition: background-image 0.3s;
         background-image: url(../../img/icons/Catalog/home-robots-img-hover.png);
       }
-      background-image: url(../../img/icons/Catalog/robots-card-bg-hover.png);
-      box-shadow: inset -2px 0 0 0 $blue;
-      
     }
   }
 
@@ -841,7 +874,25 @@ $blue: #00BBFF;
     background-color: transparent;
     justify-content: center;
     border-radius: 35px;
-    transition: background-image 0.3s, box-shadow 0.3s;
+    transition: background-image 0.3s;
+
+    &::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    right: 0;
+    max-width: 395px;
+    width: 100%; // толщина "тени"
+    background-color: transparent;
+    border: 4px solid $blue;
+    border-radius: 35px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    }
+
+    &:hover::before{
+      opacity: 1;
+    }
 
     &:hover{
       .catalog__humanoid-robots-title{
@@ -890,7 +941,25 @@ $blue: #00BBFF;
     background-color: transparent;
     justify-content: center;
     border-radius: 35px;
-    transition: background-image 0.3s, box-shadow 0.3s;
+    transition: background-image 0.3s;
+
+    &::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    right: 0;
+    max-width: 395px;
+    width: 100%; // толщина "тени"
+    background-color: transparent;
+    border: 4px solid $blue;
+    border-radius: 35px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    }
+
+    &:hover::before{
+      opacity: 1;
+    }
 
     &:hover{
       .catalog__industrial-robots-title{
