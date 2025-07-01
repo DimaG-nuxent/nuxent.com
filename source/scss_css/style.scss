@@ -92,7 +92,7 @@ $blue: #00BBFF;
     flex: 1 1 auto;
   }
 
-  .header__search-field {
+  &__search-field {
   width: 100%; // Занимает всю ширину обёртки
   width: calc(100% - 44px);
   height: 40px;
@@ -107,7 +107,7 @@ $blue: #00BBFF;
   box-sizing: border-box;
 }
 
-  .header__search-button {
+  &__search-button {
   position: absolute;
   top: 50%;
   right: 0;
@@ -310,7 +310,7 @@ $blue: #00BBFF;
     justify-content: center;
     align-items: center;
     padding: 5px;
-    transition: background-image 0.3s;
+    transition: background-image 0.3s, color 0.3s;
     
 
     &:hover{
@@ -583,7 +583,7 @@ $blue: #00BBFF;
     text-transform: uppercase;
     text-align: center;
     padding: 0px 0px 0px 30px;
-    transition: background-image 0.3s;
+    transition: background-image 0.3s, color 0.3s;
 
     &:hover{
       background-image: url(../../img/icons/popular-products/cart-button-hover.png);
@@ -635,9 +635,11 @@ $blue: #00BBFF;
 
     &:hover{
       .popular-products__robot-title{
+        transition: color 0.3s;
         color: $blue;
       }
       .popular-products__robot-price{
+        transition: color 0.3s;
         color: $blue;
       }
     }
@@ -700,11 +702,13 @@ $blue: #00BBFF;
     width: 100%;
     max-height: 257px;
     height: 100%;
-    background-color: grey; /* Временний кольор щоб бачити всю картину */
+    gap: 20px;
+    filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25));
   }
 
   &__filter-button{
     display: flex;
+    position: absolute;
     background-image: url(../../img/icons/Catalog/filter-button.png);
     width: 150px;
     height: 52px;
@@ -717,6 +721,7 @@ $blue: #00BBFF;
     text-transform: uppercase;
     padding-left: 31px;
     background-color: transparent;
+    z-index: 1;
     transition: background-image 0.3s;
 
     &:hover{
@@ -725,6 +730,202 @@ $blue: #00BBFF;
     }
   }
 
-  
+  &__other-robots{
+    display: flex;
+    background-image: url(../../img/icons/Catalog/other-robots-bg.png);
+    position: relative;
+    overflow: hidden;
+    max-width: 395px;
+    z-index: 0;
+    width: 100%;
+    height: 257px;
+    background-color: transparent;
+    justify-content: center;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    transition: background-image 0.3s, box-shadow 0.3s;
+
+    &:hover{
+      .catalog__other-robots-title{
+        transition: color 0.3s;
+        color: $blue;
+      }
+      .catalog__other-robots-img{
+        transition: background-image 0.3s;
+        background-image: url(../../img/icons/Catalog/other-robots-img-hover.png);
+      }
+      background-image: url(../../img/icons/Catalog/other-robots-bg-hover.png);
+      box-shadow: inset -2px 0 0 0 $blue;
+      
+    }
+  }
+
+  &__other-robots-img{
+    display: flex;
+    position: absolute;
+    background-image: url(../../img/icons/Catalog/other-robots-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 68px;
+    max-width: 324px;
+    width: 100%;
+    height: 161px;
+  }
+
+  &__other-robots-title{
+    position: absolute;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    color: $black;
+    bottom: 24px;
+  }
+
+  &__home-robots{
+    display: flex;
+    background-image: url(../../img/icons/Catalog/robots-card-bg.png);
+    position: relative;
+    overflow: hidden;
+    max-width: 395px;
+    width: 100%;
+    height: 257px;
+    background-color: transparent;
+    justify-content: center;
+    border-radius: 35px;
+    transition: background-image 0.3s, box-shadow 0.3s;
+
+    &:hover{
+      .catalog__home-robots-title{
+        transition: color 0.3s;
+        color: $blue;
+      }
+      .catalog__home-robots-img{
+        transition: background-image 0.3s;
+        background-image: url(../../img/icons/Catalog/home-robots-img-hover.png);
+      }
+      background-image: url(../../img/icons/Catalog/robots-card-bg-hover.png);
+      box-shadow: inset -2px 0 0 0 $blue;
+      
+    }
+  }
+
+  &__home-robots-img{
+    display: flex;
+    position: absolute;
+    background-image: url(../../img/icons/Catalog/home-robots-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 68px;
+    max-width: 324px;
+    width: 100%;
+    height: 161px;
+  }
+
+  &__home-robots-title{
+    position: absolute;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    color: $black;
+    bottom: 24px;
+  }
+
+  &__humanoid-robots{
+    display: flex;
+    background-image: url(../../img/icons/Catalog/robots-card-bg.png);
+    position: relative;
+    overflow: hidden;
+    max-width: 395px;
+    width: 100%;
+    height: 257px;
+    background-color: transparent;
+    justify-content: center;
+    border-radius: 35px;
+    transition: background-image 0.3s, box-shadow 0.3s;
+
+    &:hover{
+      .catalog__humanoid-robots-title{
+        transition: color 0.3s;
+        color: $blue;
+      }
+      .catalog__humanoid-robots-img{
+        transition: background-image 0.3s;
+        background-image: url(../../img/icons/Catalog/humanoid-robots-img-hover.png);
+      }
+      background-image: url(../../img/icons/Catalog/robots-card-bg-hover.png);
+      box-shadow: inset -2px 0 0 0 $blue;
+      
+    }
+  }
+
+  &__humanoid-robots-img{
+    display: flex;
+    position: absolute;
+    background-image: url(../../img/icons/Catalog/humanoid-robots-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 68px;
+    max-width: 324px;
+    width: 100%;
+    height: 161px;
+  }
+
+  &__humanoid-robots-title{
+    position: absolute;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    color: $black;
+    bottom: 24px;
+  }
+
+  &__industrial-robots{
+    display: flex;
+    background-image: url(../../img/icons/Catalog/robots-card-bg.png);
+    position: relative;
+    overflow: hidden;
+    max-width: 395px;
+    width: 100%;
+    height: 257px;
+    background-color: transparent;
+    justify-content: center;
+    border-radius: 35px;
+    transition: background-image 0.3s, box-shadow 0.3s;
+
+    &:hover{
+      .catalog__industrial-robots-title{
+        transition: color 0.3s;
+        color: $blue;
+      }
+      .catalog__industrial-robots-img{
+        transition: background-image 0.3s;
+        background-image: url(../../img/icons/Catalog/industrial-robots-img-hover.png);
+      }
+      background-image: url(../../img/icons/Catalog/robots-card-bg-hover.png);
+      box-shadow: inset -2px 0 0 0 $blue;
+      
+    }
+  }
+
+  &__industrial-robots-img{
+    display: flex;
+    position: absolute;
+    background-image: url(../../img/icons/Catalog/industrial-robots-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 68px;
+    max-width: 324px;
+    width: 100%;
+    height: 161px;
+  }
+
+  &__industrial-robots-title{
+    position: absolute;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    color: $black;
+    bottom: 24px;
+  }
 
 }
