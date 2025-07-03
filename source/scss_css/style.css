@@ -124,9 +124,9 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 .header__nuxent-logo {
-  width: 174.04px;
-  height: 24px;
-  background-image: url("../../img/logotypes/logo.svg");
+  width: 199.72px;
+  height: 40px;
+  background-image: url("../../img/logotypes/logo.png");
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: background-image 0.3s;
 }
 .header__nuxent-logo:hover {
-  background-image: url("../../img/logotypes/logo-hover.svg");
+  background-image: url("../../img/logotypes/logo-hover.png");
   transform: none;
 }
 .header__nuxent-logo:focus, .header__nuxent-logo:active {
@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__search-wrapper {
   position: relative;
-  max-width: 1085px;
+  max-width: 1059px;
   min-width: 200px;
   flex: 1 1 auto;
 }
@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 12px rgba(47, 117, 197, 0.24));
   border-radius: 35px;
   pointer-events: none;
 }
@@ -394,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 32px rgba(47, 117, 197, 0.24));
   border-radius: 35px;
   pointer-events: none;
 }
@@ -405,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 12px rgba(47, 117, 197, 0.24));
   border-radius: 35px;
   pointer-events: none;
 }
@@ -563,7 +563,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   max-height: 600px;
   height: 600px;
-  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 12px rgba(47, 117, 197, 0.24));
 }
 .popular-products__card_left {
   position: relative;
@@ -702,7 +702,7 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 257px;
   height: 100%;
   gap: 20px;
-  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 12px rgba(47, 117, 197, 0.24));
 }
 .catalog__filter-button {
   display: flex;
