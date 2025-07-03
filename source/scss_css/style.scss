@@ -70,11 +70,13 @@ $blue: #00BBFF;
   }
 
   &__nuxent-logo {
-    width: 200px;
-    height: 40.6px;
-    background-image: url('../../img/logotypes/logo.png');
+    width: 174.04px;
+    height: 24px;
+    background-image: url('../../img/logotypes/logo.svg');
     background-repeat: no-repeat;
     background-color: transparent;
+    background-position: center;
+    background-size: cover;
     border: none;
     padding: 0;
     margin: 0;
@@ -85,7 +87,7 @@ $blue: #00BBFF;
     transition: background-image 0.3s;
 
     &:hover {
-      background-image: url('../../img/logotypes/logo-hover.png');
+      background-image: url('../../img/logotypes/logo-hover.svg');
       transform: none;
     }
 
@@ -99,7 +101,7 @@ $blue: #00BBFF;
 
   &__search-wrapper{
     position: relative;
-    max-width: 1059px;
+    max-width: 1085px;
     min-width: 200px;
     flex: 1 1 auto;
   }
